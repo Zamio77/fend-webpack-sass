@@ -1,7 +1,14 @@
+$font-stack: Helvetica,
+sans-serif;
+$primary-color: blue;
+$secondary-color: green;
+
 body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    font: 100% $font-stack;
+    color: $primary-color;
 }
 
 main {
