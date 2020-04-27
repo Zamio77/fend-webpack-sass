@@ -1,5 +1,6 @@
 import { checkForName } from './js/nameChecker'
 import { handleSubmit } from './js/formHandler'
+import { apiCall } from './js/exampleAPI'
 
 import './styles/resets.scss'
 import './styles/base.scss'
@@ -9,9 +10,10 @@ import './styles/header.scss'
 
 console.log(checkForName);
 
-alert("I EXIST")
+document.addEventListener('DOMContentLoaded', apiCall);
 
 export {
     checkForName,
-    handleSubmit
+    handleSubmit,
+    apiCall
 }
